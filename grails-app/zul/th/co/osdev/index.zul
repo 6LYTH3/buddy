@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?init class="org.zkoss.zkplus.databind.AnnotateDataBinderInit" ?>
+<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul"
+    xmlns:h="http://www.w3.org/1999/xhtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.zkoss.org/2005/zul http://www.zkoss.org/2005/zul/zul.xsd">
+
+    <window width="500px" apply="th.co.osdev.IndexComposer">
+        <grid>
+        <auxhead>
+            <auxheader colspan="2" label="Random Buddy" style="font-size:16px" image="/images/apple-touch-icon-retina.png"/>
+        </auxhead>
+        <columns/>
+            <rows>
+                <row>
+                    Name:<textbox id="nameBox" hflex="1" constraint="no empty"/>
+                </row>
+                <row>
+                    Email:<textbox id="emailBox" hflex="1" constraint="no empty"/>
+                </row> 
+                <row spans="2" align="center">
+                   <!-- <div id="pic"></div> -->
+                    <image id="img" /> 
+                </row> 
+                <row spans="2" align="right">
+                    <button id="btnRandom" label="RANDOM" />
+                </row>
+            </rows>
+        </grid>
+
+    </window>
+
+</zk>

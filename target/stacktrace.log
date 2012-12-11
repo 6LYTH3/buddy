@@ -1,0 +1,678 @@
+2012-12-11 22:08:52,910 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+grails.validation.ValidationException: Validation Error(s) occurred during save():
+- Field error in object 'th.co.osdev.Member' on field 'secretId': rejected value [null]; codes [th.co.osdev.Member.secretId.nullable.error.th.co.osdev.Member.secretId,th.co.osdev.Member.secretId.nullable.error.secretId,th.co.osdev.Member.secretId.nullable.error.java.lang.Long,th.co.osdev.Member.secretId.nullable.error,member.secretId.nullable.error.th.co.osdev.Member.secretId,member.secretId.nullable.error.secretId,member.secretId.nullable.error.java.lang.Long,member.secretId.nullable.error,th.co.osdev.Member.secretId.nullable.th.co.osdev.Member.secretId,th.co.osdev.Member.secretId.nullable.secretId,th.co.osdev.Member.secretId.nullable.java.lang.Long,th.co.osdev.Member.secretId.nullable,member.secretId.nullable.th.co.osdev.Member.secretId,member.secretId.nullable.secretId,member.secretId.nullable.java.lang.Long,member.secretId.nullable,nullable.th.co.osdev.Member.secretId,nullable.secretId,nullable.java.lang.Long,nullable]; arguments [secretId,class th.co.osdev.Member]; default message [Property [{0}] of class [{1}] cannot be null]
+
+	at org.codehaus.groovy.grails.orm.hibernate.metaclass.AbstractSavePersistentMethod.doInvokeInternal(AbstractSavePersistentMethod.java:187)
+	at org.codehaus.groovy.grails.orm.hibernate.metaclass.AbstractDynamicPersistentMethod.invoke(AbstractDynamicPersistentMethod.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at com.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1237)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSite.invoke(PojoMetaMethodSite.java:189)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:53)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:42)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:124)
+	at org.codehaus.groovy.grails.orm.hibernate.HibernateGormInstanceApi.save(HibernateGormEnhancer.groovy:909)
+	at th.co.osdev.Member.save(Member.groovy)
+	at th.co.osdev.Member$save.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:42)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at BootStrap$_closure1.doCall(BootStrap.groovy:6)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at com.springsource.loaded.ri.OriginalClassInvoker.invoke(OriginalClassInvoker.java:34)
+	at com.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1260)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1071)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:901)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:945)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:901)
+	at groovy.lang.Closure.call(Closure.java:415)
+	at groovy.lang.Closure.call(Closure.java:409)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:301)
+	at grails.util.Environment.executeForEnvironment(Environment.java:294)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:270)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsBootstrapClass.callInit(DefaultGrailsBootstrapClass.java:60)
+	at org.codehaus.groovy.grails.web.context.GrailsConfigUtils.executeGrailsBootstraps(GrailsConfigUtils.java:74)
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.initWebApplicationContext(GrailsContextLoader.java:105)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:111)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4791)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5285)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+2012-12-11 22:08:52,915 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+grails.validation.ValidationException: Validation Error(s) occurred during save():
+- Field error in object 'th.co.osdev.Member' on field 'secretId': rejected value [null]; codes [th.co.osdev.Member.secretId.nullable.error.th.co.osdev.Member.secretId,th.co.osdev.Member.secretId.nullable.error.secretId,th.co.osdev.Member.secretId.nullable.error.java.lang.Long,th.co.osdev.Member.secretId.nullable.error,member.secretId.nullable.error.th.co.osdev.Member.secretId,member.secretId.nullable.error.secretId,member.secretId.nullable.error.java.lang.Long,member.secretId.nullable.error,th.co.osdev.Member.secretId.nullable.th.co.osdev.Member.secretId,th.co.osdev.Member.secretId.nullable.secretId,th.co.osdev.Member.secretId.nullable.java.lang.Long,th.co.osdev.Member.secretId.nullable,member.secretId.nullable.th.co.osdev.Member.secretId,member.secretId.nullable.secretId,member.secretId.nullable.java.lang.Long,member.secretId.nullable,nullable.th.co.osdev.Member.secretId,nullable.secretId,nullable.java.lang.Long,nullable]; arguments [secretId,class th.co.osdev.Member]; default message [Property [{0}] of class [{1}] cannot be null]
+
+	at BootStrap$_closure1.doCall(BootStrap.groovy:6)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:301)
+	at grails.util.Environment.executeForEnvironment(Environment.java:294)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:270)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+2012-12-11 22:08:52,915 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+grails.validation.ValidationException: Validation Error(s) occurred during save():
+- Field error in object 'th.co.osdev.Member' on field 'secretId': rejected value [null]; codes [th.co.osdev.Member.secretId.nullable.error.th.co.osdev.Member.secretId,th.co.osdev.Member.secretId.nullable.error.secretId,th.co.osdev.Member.secretId.nullable.error.java.lang.Long,th.co.osdev.Member.secretId.nullable.error,member.secretId.nullable.error.th.co.osdev.Member.secretId,member.secretId.nullable.error.secretId,member.secretId.nullable.error.java.lang.Long,member.secretId.nullable.error,th.co.osdev.Member.secretId.nullable.th.co.osdev.Member.secretId,th.co.osdev.Member.secretId.nullable.secretId,th.co.osdev.Member.secretId.nullable.java.lang.Long,th.co.osdev.Member.secretId.nullable,member.secretId.nullable.th.co.osdev.Member.secretId,member.secretId.nullable.secretId,member.secretId.nullable.java.lang.Long,member.secretId.nullable,nullable.th.co.osdev.Member.secretId,nullable.secretId,nullable.java.lang.Long,nullable]; arguments [secretId,class th.co.osdev.Member]; default message [Property [{0}] of class [{1}] cannot be null]
+
+	at BootStrap$_closure1.doCall(BootStrap.groovy:6)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:301)
+	at grails.util.Environment.executeForEnvironment(Environment.java:294)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:270)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+2012-12-11 22:08:52,915 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+grails.validation.ValidationException: Validation Error(s) occurred during save():
+- Field error in object 'th.co.osdev.Member' on field 'secretId': rejected value [null]; codes [th.co.osdev.Member.secretId.nullable.error.th.co.osdev.Member.secretId,th.co.osdev.Member.secretId.nullable.error.secretId,th.co.osdev.Member.secretId.nullable.error.java.lang.Long,th.co.osdev.Member.secretId.nullable.error,member.secretId.nullable.error.th.co.osdev.Member.secretId,member.secretId.nullable.error.secretId,member.secretId.nullable.error.java.lang.Long,member.secretId.nullable.error,th.co.osdev.Member.secretId.nullable.th.co.osdev.Member.secretId,th.co.osdev.Member.secretId.nullable.secretId,th.co.osdev.Member.secretId.nullable.java.lang.Long,th.co.osdev.Member.secretId.nullable,member.secretId.nullable.th.co.osdev.Member.secretId,member.secretId.nullable.secretId,member.secretId.nullable.java.lang.Long,member.secretId.nullable,nullable.th.co.osdev.Member.secretId,nullable.secretId,nullable.java.lang.Long,nullable]; arguments [secretId,class th.co.osdev.Member]; default message [Property [{0}] of class [{1}] cannot be null]
+
+	at BootStrap$_closure1.doCall(BootStrap.groovy:6)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:301)
+	at grails.util.Environment.executeForEnvironment(Environment.java:294)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:270)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+2012-12-11 22:52:10,347 [http-bio-8080-exec-4] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/Users/apple/Code/Grails/lean/tuts/buddy/grails-app/composers/th/co/osdev/IndexComposer.groovy: 24: unexpected token: result @ line 24, column 7.
+   		def result iName
+         ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:482)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:60)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:216)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:935)
+	at org.codehaus.groovy.grails.compiler.Grailsc.compile(Grailsc.java:79)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:629)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at sun.reflect.GeneratedMethodAccessor113.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at com.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1237)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at groovy.util.AntBuilder.performTask(AntBuilder.java:260)
+	at groovy.util.AntBuilder.nodeCompleted(AntBuilder.java:220)
+	at groovy.util.BuilderSupport.doInvokeMethod(BuilderSupport.java:147)
+	at groovy.util.AntBuilder.doInvokeMethod(AntBuilder.java:170)
+	at groovy.util.BuilderSupport.invokeMethod(BuilderSupport.java:64)
+	at org.codehaus.gant.GantBuilder.invokeMethod(GantBuilder.java:99)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:120)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectCompiler.compile(GrailsProjectCompiler.groovy:263)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectCompiler$compile$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectCompiler.compile(GrailsProjectCompiler.groovy:234)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectCompiler.compileAll(GrailsProjectCompiler.groovy:226)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectWatcher.compileIfSource(GrailsProjectWatcher.java:240)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectWatcher.access$300(GrailsProjectWatcher.java:46)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectWatcher$1.onChange(GrailsProjectWatcher.java:142)
+	at org.codehaus.groovy.grails.compiler.DirectoryWatcher.fireOnChange(DirectoryWatcher.java:162)
+	at org.codehaus.groovy.grails.compiler.DirectoryWatcher.run(DirectoryWatcher.java:144)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectWatcher.run(GrailsProjectWatcher.java:163)
+2012-12-11 22:52:10,349 [http-bio-8080-exec-4] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/Users/apple/Code/Grails/lean/tuts/buddy/grails-app/composers/th/co/osdev/IndexComposer.groovy: 24: unexpected token: result @ line 24, column 7.
+   		def result iName
+         ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:482)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:60)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:216)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:935)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:629)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+2012-12-11 22:52:10,375 [http-bio-8080-exec-4] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/Users/apple/Code/Grails/lean/tuts/buddy/grails-app/composers/th/co/osdev/IndexComposer.groovy: 24: unexpected token: result @ line 24, column 7.
+   		def result iName
+         ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:482)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:60)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:216)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:935)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:629)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+2012-12-11 22:52:10,375 [http-bio-8080-exec-4] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/Users/apple/Code/Grails/lean/tuts/buddy/grails-app/composers/th/co/osdev/IndexComposer.groovy: 24: unexpected token: result @ line 24, column 7.
+   		def result iName
+         ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:482)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:60)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:216)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:935)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:629)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+2012-12-11 22:52:12,514 [http-bio-8080-exec-5] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/Users/apple/Code/Grails/lean/tuts/buddy/grails-app/composers/th/co/osdev/IndexComposer.groovy: 24: unexpected token: result @ line 24, column 7.
+   		def result iName
+         ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:482)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:60)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:216)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:935)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:629)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+2012-12-11 22:52:12,514 [http-bio-8080-exec-5] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/Users/apple/Code/Grails/lean/tuts/buddy/grails-app/composers/th/co/osdev/IndexComposer.groovy: 24: unexpected token: result @ line 24, column 7.
+   		def result iName
+         ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:482)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:60)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:216)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:935)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:629)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+2012-12-11 22:52:12,518 [http-bio-8080-exec-5] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/Users/apple/Code/Grails/lean/tuts/buddy/grails-app/composers/th/co/osdev/IndexComposer.groovy: 24: unexpected token: result @ line 24, column 7.
+   		def result iName
+         ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:482)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:60)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:216)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:935)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:629)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+2012-12-11 22:52:12,519 [http-bio-8080-exec-5] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/Users/apple/Code/Grails/lean/tuts/buddy/grails-app/composers/th/co/osdev/IndexComposer.groovy: 24: unexpected token: result @ line 24, column 7.
+   		def result iName
+         ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:482)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:60)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:216)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:935)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:629)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+2012-12-11 22:52:13,521 [http-bio-8080-exec-7] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/Users/apple/Code/Grails/lean/tuts/buddy/grails-app/composers/th/co/osdev/IndexComposer.groovy: 24: unexpected token: result @ line 24, column 7.
+   		def result iName
+         ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:482)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:60)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:216)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:935)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:629)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+2012-12-11 22:52:13,522 [http-bio-8080-exec-7] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/Users/apple/Code/Grails/lean/tuts/buddy/grails-app/composers/th/co/osdev/IndexComposer.groovy: 24: unexpected token: result @ line 24, column 7.
+   		def result iName
+         ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:482)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:60)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:216)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:935)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:629)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+2012-12-11 22:52:13,525 [http-bio-8080-exec-7] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/Users/apple/Code/Grails/lean/tuts/buddy/grails-app/composers/th/co/osdev/IndexComposer.groovy: 24: unexpected token: result @ line 24, column 7.
+   		def result iName
+         ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:482)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:60)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:216)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:935)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:629)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+2012-12-11 22:52:13,526 [http-bio-8080-exec-7] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/Users/apple/Code/Grails/lean/tuts/buddy/grails-app/composers/th/co/osdev/IndexComposer.groovy: 24: unexpected token: result @ line 24, column 7.
+   		def result iName
+         ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:482)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:60)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:216)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:935)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:629)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+2012-12-11 22:52:14,523 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/Users/apple/Code/Grails/lean/tuts/buddy/grails-app/composers/th/co/osdev/IndexComposer.groovy: 24: unexpected token: result @ line 24, column 7.
+   		def result iName
+         ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:482)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:60)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:216)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:935)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:629)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+2012-12-11 22:52:14,524 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/Users/apple/Code/Grails/lean/tuts/buddy/grails-app/composers/th/co/osdev/IndexComposer.groovy: 24: unexpected token: result @ line 24, column 7.
+   		def result iName
+         ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:482)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:60)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:216)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:935)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:629)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+2012-12-11 22:52:14,527 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/Users/apple/Code/Grails/lean/tuts/buddy/grails-app/composers/th/co/osdev/IndexComposer.groovy: 24: unexpected token: result @ line 24, column 7.
+   		def result iName
+         ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:482)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:60)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:216)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:935)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:629)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+2012-12-11 22:52:14,527 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/Users/apple/Code/Grails/lean/tuts/buddy/grails-app/composers/th/co/osdev/IndexComposer.groovy: 24: unexpected token: result @ line 24, column 7.
+   		def result iName
+         ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:482)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:60)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:216)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:935)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:629)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+2012-12-11 22:52:15,526 [http-bio-8080-exec-9] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/Users/apple/Code/Grails/lean/tuts/buddy/grails-app/composers/th/co/osdev/IndexComposer.groovy: 24: unexpected token: result @ line 24, column 7.
+   		def result = iName
+         ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:482)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:60)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:216)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:935)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:629)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+2012-12-11 22:52:15,526 [http-bio-8080-exec-9] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/Users/apple/Code/Grails/lean/tuts/buddy/grails-app/composers/th/co/osdev/IndexComposer.groovy: 24: unexpected token: result @ line 24, column 7.
+   		def result = iName
+         ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:482)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:60)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:216)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:935)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:629)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+2012-12-11 22:52:15,529 [http-bio-8080-exec-9] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/Users/apple/Code/Grails/lean/tuts/buddy/grails-app/composers/th/co/osdev/IndexComposer.groovy: 24: unexpected token: result @ line 24, column 7.
+   		def result = iName
+         ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:482)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:60)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:216)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:935)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:629)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+2012-12-11 22:52:15,530 [http-bio-8080-exec-9] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/Users/apple/Code/Grails/lean/tuts/buddy/grails-app/composers/th/co/osdev/IndexComposer.groovy: 24: unexpected token: result @ line 24, column 7.
+   		def result = iName
+         ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:482)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:60)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:216)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:935)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:629)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
