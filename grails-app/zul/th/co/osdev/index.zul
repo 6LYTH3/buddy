@@ -21,7 +21,6 @@
                     Email:<textbox id="emailBox" hflex="1" constraint="no empty"/>
                 </row> 
                 <row spans="2" align="center">
-                   <!-- <div id="pic"></div> -->
                     <image id="img" /> 
                 </row> 
                 <row spans="2" align="right">

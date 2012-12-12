@@ -7,8 +7,6 @@ class BootStrap {
     	def user2 = new Member(name: "blythe", secretId: 2).save(failOnError: true)
     	def user3 = new Member(name: "champ", secretId: 3).save(failOnError: true)
     	def user4 = new Member(name: "aor", secretId: 4).save(failOnError: true)
-
-    	def buddy = new Buddy(buddyId: 2, name: "nok", email: "by@hotmail.com").save(failOnError: true)
     }
     def destroy = {
     }

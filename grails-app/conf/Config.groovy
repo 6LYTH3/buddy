@@ -62,6 +62,19 @@ grails.hibernate.cache.queries = false
 environments {
     development {
         grails.logging.jul.usebridge = true
+        
+        grails {
+              mail {
+              host = "smtp.gmail.com"
+              port = 465
+              username = "ST4R13UCK@gmail.com"
+              password = "FREDERICK"
+              props = ["mail.smtp.auth":"true",             
+                      "mail.smtp.socketFactory.port":"465",
+                      "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
+                      "mail.smtp.socketFactory.fallback":"false"]
+            }
+        }
     }
     production {
         grails.logging.jul.usebridge = false

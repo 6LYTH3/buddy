@@ -7,8 +7,6 @@ class Buddy {
 	String email
     static constraints = {
     	buddyId blank:false , unique:true
-    	name blank:false , unique:true
-    	email blank:false , unique:true
     }
 
     String toString(){
