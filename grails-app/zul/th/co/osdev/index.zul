@@ -10,7 +10,7 @@
     <window width="500px" apply="th.co.osdev.IndexComposer">
         <grid>
         <auxhead>
-            <auxheader colspan="2" label="Random Buddy" style="font-size:16px" image="/images/apple-touch-icon-retina.png"/>
+            <auxheader colspan="2" label="Random Buddy" style="font-size:16px" image="/images/fusion_starter_logo.png"/>
         </auxhead>
         <columns/>
             <rows>

@@ -16,35 +16,36 @@ class IndexComposer extends GrailsComposer {
 
     def host = "smtp.gmail.com"
     def port = "465"
-    def user = "ST4R13UCK@gmail.com"
-    def passwd = "FREDERICK"
+    def user = "account@gmail.com"
+    def passwd = "password"
 
     def btnSend
     def nList = []
     def member = ['P_Unt','P_Lek','Tle','Tar','Aor','P_Dew','Krui','Nok','Ji','Krich','P_1','Win','Blythe','Champ']
-    def email = [
-    	'samphan@osdev.co.th',
-    	'jantra@osdev.co.th',
-    	'tatat@osdev.co.th',
-    	'tantai@osdev.co.th',
-    	'anchalee@osdev.co.th',
-    	'tinakon@osdev.co.th',
-    	'pongsiri@osdev.co.th',
-    	'narumon@osdev.co.th',
-    	'jirat@osdev.co.th',
-    	'khomkrich@osdev.co.th',
-    	'jarurong@osdev.co.th',
-    	'thanabodee@osdev.co.th',
-    	'st4r13uck@gmail.com',
-    	'pisooteng@gmail.com'
+
+    def emails = [
+    	'test@gmail.com',
+    	'test@gmail.com',
+    	'test@gmail.com',
+    	'test@gmail.com',
+    	'test@gmail.com',
+    	'test@gmail.com',
+    	'test@gmail.com',
+    	'test@gmail.com',
+    	'test@gmail.com',
+    	'test@gmail.com',
+    	'test@gmail.com',
+    	'test@gmail.com',
+    	'test@gmail.com',
+    	'test@gmail.com'
     ]
 
     @Listen("onClick = #btnSend")
     def send(){
     	for(int i = 0; i < member.size; i++){
-    		def to = email[i]
-        	def subject = "buddy for celebrate the new years."
-        	def body = "Hello "+member[i]+", your buddy is "+member.get(nList[i]-1)
+    		def to = emails[i]
+        	def subject = "buddy for the new years of celebrate OSDev ."
+        	def body = "Hello "+member[i]+" the OSDev have celebrate the new years. you must send secret gift to buddy, \nyour buddy is "+member.get(nList[i]-1)
 
         	sendMail(to, subject, body)
     	}
