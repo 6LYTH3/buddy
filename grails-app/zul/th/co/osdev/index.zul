@@ -14,20 +14,18 @@
         </auxhead>
         <columns/>
             <rows>
-                <row>
-                    Name:<textbox id="nameBox" hflex="1" constraint="no empty"/>
-                </row>
-                <row>
-                    Email:<textbox id="emailBox" hflex="1" constraint="no empty"/>
-                </row> 
                 <row spans="2" align="center">
-                    <image id="img" /> 
-                </row> 
-                <row spans="2" align="right">
-                    <button id="btnRandom" label="RANDOM" />
+                    <button id="btnRandom" label="Random" />
+                </row>
+                <row spans="2" align="center">
+                    <div id="result"></div>
+                </row>
+                <row spans="2" align="center">
+                    <button id="btnSend" label="Send Mail" disabled="true"/>
                 </row>
             </rows>
         </grid>
+
 
     </window>
 

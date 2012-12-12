@@ -7,7 +7,7 @@ class UrlMappings {
 			}
 		}
 
-		"/"(view:"/index")
+		"/"(view:"/th/co/osdev/index.zul")
 		"500"(view:'/error')
 	}
 }

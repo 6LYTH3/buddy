@@ -1,4 +1,4 @@
-package buddy
+package random
 
 import static org.junit.Assert.*
 
